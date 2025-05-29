@@ -11,7 +11,7 @@ export class valorItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["valor", "sheet", "item"],
       width: 620,
       height: 480,

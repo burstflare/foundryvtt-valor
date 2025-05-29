@@ -39,15 +39,15 @@
       {{!-- Description Tab --}}
       <div class="tab" data-group="primary" data-tab="description">
         <div class="season{{system.season}} background">
-          <i>{{editor content=system.text.flavor target="system.text.flavor" rollData=rollData button=true owner=owner editable=editable}}</i>
+          <i>{{editor system.text.flavor target="system.text.flavor" rollData=rollData button=true owner=owner editable=editable}}</i>
         </div>
         <br>
         <h2 for="system.text.effect" class="resource-label season{{system.season}} text-border1">Effect</h2>
-        {{editor content=system.text.effect target="system.text.effect" rollData=rollData button=true owner=owner editable=editable}}
+        {{editor system.text.effect target="system.text.effect" rollData=rollData button=true owner=owner editable=editable}}
         <h2 for="system.text.levelUp" class="resource-label season{{system.season}} text-border1">Level Up</h2>
-        {{editor content=system.text.levelUp target="system.text.levelUp" rollData=rollData button=true owner=owner editable=editable}}
+        {{editor system.text.levelUp target="system.text.levelUp" rollData=rollData button=true owner=owner editable=editable}}
         <h2 for="system.text.special" class="resource-label season{{system.season}} text-border1">Special</h2>
-        {{editor content=system.text.special target="system.text.special" rollData=rollData button=true owner=owner editable=editable}}
+        {{editor system.text.special target="system.text.special" rollData=rollData button=true owner=owner editable=editable}}
       </div>
 
       {{!-- Details Tab --}}
