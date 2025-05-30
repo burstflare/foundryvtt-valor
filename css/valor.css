@@ -673,5 +673,14 @@
   background: #DBB9AE;
 }
 
+.valor .season3.titlebox-right > div:not(.experience) > label.resource-label,
+.valor .season4.titlebox-right > div:not(.experience) > label.resource-label {
+  color: white;
+  text-shadow: 0px 0px 4px black;
+}
+
+img.item-image,
+.item-image img { background: #ababab; }
+
 
 

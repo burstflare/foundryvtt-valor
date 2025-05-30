@@ -5,10 +5,10 @@
 
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
     <div class="header-fields">
-      <div class="valor titlebox season1 text-border1">
+      <div class="valor titlebox season{{system.misc.season.value}} text-border1">
         <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
 
-        <div class="grid grid-3col titlebox-right season1 text-border2">
+        <div class="grid grid-3col titlebox-right season{{system.misc.season.value}} text-border2">
           <div class="flex-group-center level">
             <input type="text" name="system.misc.season.value" value="{{system.misc.season.value}}" data-dtype="Number"/>
             <label for="system.misc.season.value" class="resource-label">Season</label>
@@ -19,7 +19,7 @@
             <label for="system.misc.level.value" class="resource-label">Level</label>
           </div>
 
-          <div class="experience season1 background">
+          <div class="experience season{{system.misc.season.value}} background">
             <label for="system.misc.experience.value" class="resource-label">Experience</label>
             <div>
               <input type="text" name="system.misc.experience.value" value="{{system.misc.experience.value}}" data-dtype="Number"/>
@@ -142,28 +142,28 @@
         <div class="flexcol attribute-box season2 text-border1 background">
           <div class="flexrow resource-label flex-group-center season4 text-border1">BASE</div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.attribute.strength.value" class="resource-label rollable flexlarge align-left" data-label="strength">Strength</label>
+            <label for="system.attribute.strength.value" class="resource-label flexlarge align-left" data-label="strength">Strength</label>
             <input class="season4 text-border1" type="text" name="system.attribute.strength.value" value="{{system.attribute.strength.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.attribute.agility.value" class="resource-label rollable flexlarge align-left" data-label="agility">Agility</label>
+            <label for="system.attribute.agility.value" class="resource-label flexlarge align-left" data-label="agility">Agility</label>
             <input class="season4 text-border1" type="text" name="system.attribute.agility.value" value="{{system.attribute.agility.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.attribute.spirit.value" class="resource-label rollable flexlarge align-left" data-label="spirit">Spirit</label>
+            <label for="system.attribute.spirit.value" class="resource-label flexlarge align-left" data-label="spirit">Spirit</label>
             <input class="season4 text-border1" type="text" name="system.attribute.spirit.value" value="{{system.attribute.spirit.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.attribute.mind.value" class="resource-label rollable flexlarge align-left" data-label="mind">Mind</label>
+            <label for="system.attribute.mind.value" class="resource-label flexlarge align-left" data-label="mind">Mind</label>
             <input class="season4 text-border1" type="text" name="system.attribute.mind.value" value="{{system.attribute.mind.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.attribute.guts.value" class="resource-label rollable flexlarge align-left" data-label="guts">Guts</label>
+            <label for="system.attribute.guts.value" class="resource-label flexlarge align-left" data-label="guts">Guts</label>
             <input class="season4 text-border1" type="text" name="system.attribute.guts.value" value="{{system.attribute.guts.value}}" data-dtype="Number"/>
           </div>
         </div>
 
-        <div class="flexcol attribute-box season1 text-border1 background">
+        <div class="flexcol attribute-box season{{system.misc.season.value}} text-border1 background">
           <span class="flexrow resource-label flex-group-center season3 text-border1">ACTIVE</span>
           <div class="attribute flexrow flex-group-center season3 text-border1">
             <label for="system.attribute.muscle.value" class="resource-label rollable flexlarge align-left" data-roll="d10+@attribute.muscle.value" data-label="muscle">Muscle</label>
@@ -190,33 +190,33 @@
         <div class="flexcol attribute-box season2 text-border1 background">
           <div class="flexrow resource-label flex-group-center season4 text-border1">ATTACK</div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.statistic.attack.strength.value" class="resource-label rollable flexlarge align-left" data-label="strength">Strength</label>
+            <label for="system.statistic.attack.strength.value" class="resource-label flexlarge align-left" data-label="strength">Strength</label>
             <input class="season4 text-border1" type="text" name="system.statistic.attack.strength.value" value="{{system.statistic.attack.strength.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.statistic.attack.agility.value" class="resource-label rollable flexlarge align-left" data-label="agility">Agility</label>
+            <label for="system.statistic.attack.agility.value" class="resource-label flexlarge align-left" data-label="agility">Agility</label>
             <input class="season4 text-border1" type="text" name="system.statistic.attack.agility.value" value="{{system.statistic.attack.agility.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.statistic.attack.spirit.value" class="resource-label rollable flexlarge align-left" data-label="spirit">Spirit</label>
+            <label for="system.statistic.attack.spirit.value" class="resource-label flexlarge align-left" data-label="spirit">Spirit</label>
             <input class="season4 text-border1" type="text" name="system.statistic.attack.spirit.value" value="{{system.statistic.attack.spirit.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season4 text-border1">
-            <label for="system.statistic.attack.mind.value" class="resource-label rollable flexlarge align-left" data-label="mind">Mind</label>
+            <label for="system.statistic.attack.mind.value" class="resource-label flexlarge align-left" data-label="mind">Mind</label>
             <input class="season4 text-border1" type="text" name="system.statistic.attack.mind.value" value="{{system.statistic.attack.mind.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center">
           </div>
         </div>
 
-        <div class="flexcol attribute-box season1 text-border1 background">
+        <div class="flexcol attribute-box season{{system.misc.season.value}} text-border1 background">
           <span class="flexrow resource-label flex-group-center season3 text-border1">STATISTICS</span>
           <div class="attribute flexrow flex-group-center season3 text-border1">
-            <label for="system.statistic.defense.value" class="resource-label rollable flexlarge align-left" data-label="defense">Defense</label>
+            <label for="system.statistic.defense.value" class="resource-label flexlarge align-left" data-label="defense">Defense</label>
             <input class="season3 text-border1" type="text" name="system.statistic.defense.value" value="{{system.statistic.defense.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season3 text-border1">
-            <label for="system.statistic.initiative.value" class="resource-label rollable flexlarge align-left" data-label="resistance">Resistance</label>
+            <label for="system.statistic.initiative.value" class="resource-label flexlarge align-left" data-label="resistance">Resistance</label>
             <input class="season3 text-border1" type="text" name="system.statistic.resistance.value" value="{{system.statistic.resistance.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season3 text-border1">
@@ -224,11 +224,11 @@
             <input class="season3 text-border1" type="text" name="system.statistic.initiative.value" value="{{system.statistic.initiative.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season3 text-border1">
-            <label for="system.statistic.move.value" class="resource-label rollable flexlarge align-left" data-label="move">Move</label>
+            <label for="system.statistic.move.value" class="resource-label flexlarge align-left" data-label="move">Move</label>
             <input class="season3 text-border1" type="text" name="system.statistic.move.value" value="{{system.statistic.move.value}}" data-dtype="Number"/>
           </div>
           <div class="attribute flexrow flex-group-center season3 text-border1">
-            <label for="system.statistic.damageIncrement.value" class="resource-label rollable flexlarge align-left" data-label="damageIncrement">Dmg. Inc.</label>
+            <label for="system.statistic.damageIncrement.value" class="resource-label flexlarge align-left" data-label="damageIncrement">Dmg. Inc.</label>
             <input class="season3 text-border1" type="text" name="system.statistic.damageIncrement.value" value="{{system.statistic.damageIncrement.value}}" data-dtype="Number"/>
           </div>
         </div>
